@@ -1,0 +1,2 @@
+# slaider
+Slaider with animation

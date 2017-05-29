@@ -1,0 +1,74 @@
+﻿/*	
+Первичные стили:
+С ними работает слайд шоу
+*/
+body{
+	margin: 0px;
+	padding-left: 55px;
+}
+.fon {
+	position: absolute;
+	width: 321px;
+	height: 327px;
+	background-image: url(images/fon1.png);
+	z-index: 500;
+	text-align: center !important;
+	padding-top: 100px;
+	padding-left: 65px;
+}
+.text{
+font:bold 60px arial;
+text-align:center;
+color:#EB5252;
+text-shadow:2px 2px 0px #fff,4px 4px 0px #9C9C9C;
+
+}
+.footer{width:250px;
+text-align:center;
+color:#FA4A23;
+text-shadow:2px 2px 0px #fff,4px 4px 0px #9C9C9C;
+font-size:18px;
+float:inherit;
+z-index:-1;}
+
+.over{width:50px;
+float: left;
+height:100px;}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(-40%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp1 {
+	opacity: 0;
+  animation:fadeInUp 2s 0.2s alternate-reverse infinite;
+  animation-fill-mode:forwards;
+}
+.fadeInUp2 {
+  opacity: 0;
+  animation:fadeInUp 2s 0.4s alternate-reverse infinite;
+  animation-fill-mode:forwards;
+}
+.fadeInUp3 {
+	opacity: 0;
+  animation:fadeInUp 2s 0.6s alternate-reverse infinite ;
+  animation-fill-mode:forwards;
+}
+.fadeInUp4 {
+	opacity: 0;
+  animation:fadeInUp 2s 0.8s alternate-reverse infinite;
+  animation-fill-mode:forwards;
+}
+.fadeInUp5 {
+	opacity: 0;
+  animation:fadeInUp 2s 1s alternate-reverse infinite;
+  animation-fill-mode:forwards;
+}

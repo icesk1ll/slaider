@@ -1,0 +1,74 @@
+﻿/*	
+Первичные стили:
+С ними работает слайд шоу
+*/
+body{
+    margin: 0px;}
+#fon {position: absolute;
+width: 1048px;
+height: 667px;
+background-image: url(images/fon.png);
+z-index: 500;
+}
+#slides {
+    position: absolute;
+    height: 300px;
+    list-style-type: none;
+    z-index: -5;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -1;
+
+}
+
+.showing {
+    opacity: 1;
+    z-index: -2;
+}
+
+/*
+Второстепенные стили:
+Внешний вид; можете изменять
+*/
+#clock {z-index: -3;}
+.slide {
+    position: absolute;
+    width: 300px;
+	height: 300px;
+	-moz-border-radius: 150px;
+	-webkit-border-radius: 150px;
+	border-radius: 150px;
+  transform: translateY(0px) translateX(0px);
+      -webkit-animation: orbit2 5s cubic-bezier(0, 0, 1, 1) infinite; /* Chrome, Safari 5 */
+}
+@-webkit-keyframes orbit2 {
+	from { 	-webkit-transform:translateY(75px) translateX(-300px);}
+  75% {-webkit-transform:translateY(0px) translateX(0px);}
+  25% {-webkit-transform:translateY(0px) translateX(0px);}
+  to {-webkit-transform:translateY(75px) translateX(300px);}
+}
+.slide:nth-of-type(1) {
+    background-image: url(images/thumbnail_center.png);
+    background-size: cover;
+}
+.slide:nth-of-type(2) {
+    background-image: url(images/thumbnail_right.png);
+    background-size: cover;
+}
+.slide:nth-of-type(3) {
+    background-image: url(images/thumbnail_left.png);
+    background-size: cover;
+}
+.slide:nth-of-type(4) {
+    background-image: url(images/thumbnail_right.png);
+    background-size: cover;
+}
+.slide:nth-of-type(5) {
+    background-image: url(images/thumbnail_left.png);
+    background-size: cover;
+}

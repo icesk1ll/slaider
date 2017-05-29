@@ -1,0 +1,57 @@
+﻿/*	
+Первичные стили:
+С ними работает слайд шоу
+*/
+body{
+    margin: 0px;}
+#fon {position: absolute;
+width: 1048px;
+height: 667px;
+background-image: url(images/fon.png);
+z-index: 500;
+}
+#slides {
+    position: absolute;
+    height: 300px;
+    list-style-type: none;
+    z-index: -5;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -1;
+
+}
+
+.showing {
+    opacity: 1;
+    z-index: -2;
+}
+
+/*
+Второстепенные стили:
+Внешний вид; можете изменять
+*/
+#clock {z-index: -3;}
+.slide {
+    position: absolute;
+    width: 300px;
+	height: 300px;
+	-moz-border-radius: 150px;
+	-webkit-border-radius: 150px;
+	border-radius: 150px;
+  transform: translateY(0px) translateX(0px);
+      -webkit-animation: orbit2 5s  ; /* Chrome, Safari 5 */
+}
+@-webkit-keyframes orbit2 {
+	from { 	-webkit-transform: scale(0);}
+  to {-webkit-transform: scale(0.5);}
+}
+.slide:nth-of-type(1) {
+    background-image: url(images/smile.gif);
+    background-size: cover;
+  animation-fill-mode:forwards;
+}
